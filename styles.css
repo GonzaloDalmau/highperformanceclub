@@ -1,0 +1,135 @@
+
+:root {
+    --red: #ff0000;
+    --black: #121312;
+    --font-family: "Oswald", sans-serif;
+}
+
+body{
+    
+    background: var(--black);
+    color: #fff;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+nav , footer {
+    min-height: auto;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    padding: 12px 20px;
+}
+
+nav img , footer img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+}
+.difference {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    table-layout: fixed;
+
+    article {
+        display: flex;
+        background: #fff;
+        color: #000;
+        flex: 1;
+        flex-direction: column;
+        flex-basis: 0;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: #131111 0px 0px 10px;
+    }
+}
+
+.difference > article {
+    padding-bottom: 0;
+}
+
+.comparison {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.comparison ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comparison li {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.comparison li:last-child {
+  margin-bottom: 0;
+}
+
+.comparison h3 {
+  margin: 0 0 16px;
+  text-align: left;
+  .material-icons {
+    color: black;
+    font-size: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}
+
+.comparison .material-icons {
+  flex: 0 0 24px;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  width: 24px; 
+  overflow:hidden; 
+}
+
+.card1 .material-icons {
+  color: var(--red);
+}
+
+.card2 .material-icons {
+  color: #16803c;
+}
+
+.card1 {
+  box-sizing: border-box;
+  flex: 1 1 300px;
+  background: #aca8a8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card2 {
+  box-sizing: border-box;
+  flex: 1 1 300px;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.intro {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    small{
+        color: var(--red);
+    }
+}
