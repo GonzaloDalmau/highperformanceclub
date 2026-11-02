@@ -121,7 +121,24 @@ nav img , footer img {
   padding: 20px;
   border-radius: 8px;
 }
+.requirements-card li {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
 
+.requirements-card {
+  color: #000;
+  text-align: right;
+  box-sizing: border-box;
+  flex: 1 1 300px;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
 
 .intro {
     min-height: auto;
@@ -133,3 +150,77 @@ nav img , footer img {
         color: var(--red);
     }
 }
+
+.blueprint {
+    padding: 50px 12px;
+    text-align: center;
+}
+
+.blueprint article {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.blueprint ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 32px 0 0;
+    padding: 0;
+}
+
+.blueprint li {
+    flex: 1;
+    position: relative;
+}
+
+.blueprint li:not(:last-child)::after {
+    color: var(--red);
+    content: "\2192";
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    right: -25px;
+    top: 12px;
+}
+
+.blueprint .number {
+    align-items: center;
+    border: 3px solid var(--red);
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 28px;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    line-height: 1;
+    width: 56px;
+}
+
+.blueprint h3 {
+    margin: 12px 0 4px;
+}
+
+.blueprint p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .blueprint ul {
+        align-items: center;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .blueprint li {
+        max-width: 260px;
+    }
+
+    .blueprint li:not(:last-child)::after {
+        bottom: -34px;
+        right: auto;
+        top: auto;
+        transform: rotate(90deg);
+    }
+}
+
