@@ -26,6 +26,24 @@ nav img , footer img {
     width: 32px;
     object-fit: contain;
 }
+
+.instagram-link {
+    color: #fff;
+    display: inline-flex;
+}
+
+.instagram-logo {
+    fill: none;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    width: 24px;
+}
+
+.instagram-logo circle:last-child {
+    fill: currentColor;
+    stroke: none;
+}
 .difference {
     text-align: center;
     padding: 50px;
@@ -121,18 +139,30 @@ nav img , footer img {
   padding: 20px;
   border-radius: 8px;
 }
+
+.requirements{
+  text-align: center;
+}
+
 .requirements-card li {
   list-style: none;
+  text-align: center;
   align-items: center;
   display: flex;
-  gap: 10px;
+  gap: 6px;
   line-height: 1.4;
   margin-bottom: 12px;
+  .material-icons {
+    color: black;
+    font-size: 24px;
+    margin-right: 3px;
+    vertical-align: middle;
+  }
 }
 
 .requirements-card {
   color: #000;
-  text-align: right;
+  text-align: center;
   box-sizing: border-box;
   flex: 1 1 300px;
   background: #f1f1f1;
@@ -223,4 +253,3 @@ nav img , footer img {
         transform: rotate(90deg);
     }
 }
-
